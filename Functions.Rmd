@@ -209,7 +209,7 @@ In R, you'll often see functions called __closures__. This name reflects the fac
 ### Invoking a function
 \indexc{do.call()}
 
-You normally call a function by placing with arguments wrapped in parentheses: `mean(1:10, na.rm = TRUE)`. But what happens if you have the arguments already in a data structure?
+You normally call a function by placing its arguments, wrapped in parentheses, after its name: `mean(1:10, na.rm = TRUE)`. But what happens if you have the arguments already in a data structure?
 
 ```{r}
 args <- list(1:10, na.rm = TRUE)
@@ -838,8 +838,8 @@ Using `...` comes with two downsides:
     mean(1, 2, 3, na.omit = TRUE)
     ```
 
-1.  In the following call, explain how to find the documentation for the
-    named arguments in the following function call:
+1.  Explain how to find the documentation for the named arguments in the 
+    following function call:
     
     ```{r, fig.asp = 1, small_mar = TRUE, fig.width = 3}
     plot(1:10, col = "red", pch = 20, xlab = "x", col.lab = "blue")
@@ -948,7 +948,7 @@ j05 <- function() {
 j05()
 ```
 
-An error indicates that something has gone wrong, and forces the user to deal with the problem. Some languages (like C, Go, and Rust) rely on special return values to indicate problems, but in R you should always throw an error. You'll learn more about errors, and how to handle them, in [Conditions].
+An error indicates that something has gone wrong, and forces the user to deal with the problem. Some languages (like C, Go, and Rust) rely on special return values to indicate problems, but in R you should always throw an error. You'll learn more about errors, and how to handle them, in Chapter \@ref(conditions).
 
 ### Exit handlers {#on-exit}
 \indexc{on.exit()}
@@ -1033,7 +1033,7 @@ j09()
 
 1.  What does `write.table()` return? What would be more useful?
 
-1.  How does the `chdir` parameter of `source()` compare to `in_dir()`? Why 
+1.  How does the `chdir` parameter of `source()` compare to `with_dir()`? Why 
     might you prefer one to the other?
 
 1.  Write a function that opens a graphics device, runs the supplied code, and 
